@@ -92,14 +92,3 @@ class Escudo < Decorator
     @defensa >= 0 
   end
 end
-
-class Daga < Decorator
-  def suicidio
-    @objeto
-  end
-end
-
-e = EnemigoComun.new
-ec = Casco.new(e)
-ecd = Daga.new(ec)
-puts ecd.suicidio
